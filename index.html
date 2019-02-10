@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+    <link rel="stylesheet" href="/css/all.css" />
+    <title>廖翊翔</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">
+        廖翊翔
+      </div>
+      <div class="profile">Personal Profile</div>
+      <div class="skills">My Skills</div>
+      <div class="portfolio">Portfolio</div>
+    </div>
+    <div class="profile">
+      <h1>Personal Profile</h1>
+      <p>
+        我的名字是廖翊翔，1993年7月1日出生，畢業於國立台灣海洋大學水產養殖學系，因為對程式有興趣而開始學習，接觸了 web 開發後熱衷於學習 JavaScript，之後接觸了 Vue.js 框架、Node.js、SCSS
+        等等各種工具，學習到更多利於開發的方法，而且也利用學到的東西解決了平日遇上的問題，讓我在過程中得到許多成就感。
+      </p>
+      <p>最近對於 .net core 有興趣，想學習新的 web 開發方法，也打算學習資料結構及演算法，來充實軟體開發的相關知識，讓自己能寫出更好的程式。</p>
+    </div>
+    <div class="skills">
+      <h1>My Skills</h1>
+      <div class="chartContainer" width="400" height="200">
+        <canvas id="myChart"></canvas>
+      </div>
+      <div class="chartContainer" width="200" height="200">
+        <canvas id="myChart2"></canvas>
+      </div>
+    </div>
+    <div class="portfolio">
+      <h1>Portfolio</h1>
+      <div class="sweetaste-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 Sweetaste .png" alt="First slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 本日精選.png" alt="Second slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 查詢訂單.png" alt="Third slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 登入.png" alt="4" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 註冊帳號.png" alt="5" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 購物車.png" alt="6" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 Sweetaste (2).png" alt="7" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 Sweetaste (1).png" alt="8" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 所有甜點.png" alt="9" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 購物車(1).png" alt="10" />
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="info">
+          <h2>Sweetaste 網路甜點商城</h2>
+          <p>在 Facebook 上的前端交流社團看到有提供讓人練習的設計稿，所以就拿來當作 SCSS 的切版和樣式管理的練習，製作出能對應電腦、平板、手機螢幕大小的 RWD 網頁。</p>
+          <p>
+            學了 Nuxt 後將切完版的靜態網站製作成伺服器端渲染的網站，彌補了單純使用 Vue 製作成 SPA 後的 SEO 問題。為了讓網站有登入以及購物車、結帳、記錄用戶、訂單的功能，使用了 Firebase
+            的身分驗證讓一般帳號建立/登入以及可以用 Facebook、Google、Twitter 帳號登入，資料庫的部分使用了 Cloud Firestore。
+          </p>
+          <p>最後利用 Git 發佈到 Heroku 平台的伺服器，使網站能用伺服器端渲染的方式運作。</p>
+          <div class="techBox">
+            <span class="use">使用到的技術 : </span><span class="tech">Vue.js</span>
+            <span class="tech">Nuxt.js</span>
+            <span class="tech">Vuex</span>
+            <span class="tech">AJAX</span>
+            <span class="tech">RWD</span>
+            <span class="tech">SCSS</span>
+            <span class="tech">Firebase</span>
+            <span class="tech">Heroku</span>
+            <span class="tech">Git</span>
+          </div>
+          <div class="link">
+            <span><a href="https://sweetaste.herokuapp.com/" target="_blank">網站連結</a></span>
+            <span><a href="https://github.com/YSL0701/nuxt-sweet" target="_blank">原始碼</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="plurk-timeline-container">
+        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="6"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="7"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="8"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="9"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="10"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="11"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="12"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="13"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 噗浪時光機.png" alt="First slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 噗浪時光機(1).png" alt="Second slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 噗浪時光機(2).png" alt="Third slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 噗浪時光機(3).png" alt="4" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 書籤 - 噗浪時光機(1).png" alt="5" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 說明 - 噗浪時光機(1).png" alt="6" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 關於 - 噗浪時光機(1).png" alt="7" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 噗浪時光機(4).png" alt="8" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 噗浪時光機(5).png" alt="9" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 噗浪時光機(6).png" alt="10" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 噗浪時光機(7).png" alt="11" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 書籤 - 噗浪時光機.png" alt="12" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 說明 - 噗浪時光機.png" alt="13" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 關於 - 噗浪時光機.png" alt="14" />
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="info">
+          <h2>噗浪時光機</h2>
+          <p>
+            噗浪雖然有提供時光機功能讓人能夠指定時間看自己的帳號過去發的文章，但是要查看其他人過去的文章只能到對方的頁面滾動時間軸，如果對方的文章量很多或是想看的文章在很久以前，那只能不斷滾動直到找到為止，可能要花上半個小時甚至一個多小時也是有可能的，如果瀏覽器意外被關閉那就又要再找一次。
+          </p>
+          <p>
+            為了節省時間，所以我查看<a href="https://www.plurk.com/" target="_blank">噗浪</a>取得文章和回應的 API 和 request 參數，並且利用 Node.js 進行網路爬蟲來取得帳號的 user id，用 user id
+            和時間作為參數發出 requset 後取得文章資料，之後就可以用這些資料作為參數發出 requset 取得文章回應。
+          </p>
+          <p>前端使用 Vue.js 和 SCSS 製作出 RWD 網頁，利用 AJAX 和伺服器端取得整理過的資料呈現到畫面上，並且用 localStorage 來做出儲存帳號和書籤的功能。</p>
+          <div class="techBox">
+            <span class="use">使用到的技術 : </span><span class="tech">Vue.js</span>
+            <span class="tech">Vue Cli</span>
+            <span class="tech">Vue Router</span>
+            <span class="tech">Vuex</span>
+            <span class="tech">AJAX</span>
+            <span class="tech">RWD</span>
+            <span class="tech">SCSS</span>
+            <span class="tech">Node.js</span>
+            <span class="tech">Express</span>
+            <span class="tech">web crawler</span>
+            <span class="tech">Heroku</span>
+            <span class="tech">Git</span>
+          </div>
+          <div class="link">
+            <span><a href="https://plurk-timeline.herokuapp.com/" target="_blank">網站連結</a></span>
+            <span><a href="https://github.com/YSL0701/vue_plurk_timeline" target="_blank">原始碼(Vue.js)</a></span>
+            <span><a href="https://github.com/YSL0701/Node.js_Plurk_timeline" target="_blank">原始碼(Node.js)</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="plurk-response-catcher">
+        <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 Plurk留言搜尋(1).png" alt="First slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./image/Screenshot_2019-02-10 Plurk留言搜尋.png" alt="Second slide" />
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="info">
+          <h2>Plurk 留言搜尋</h2>
+          <p>
+            噗浪的好友數量多起來之後，未讀留言的數量常常會到上百個，如果只想看某個人在這些文章中的留言的話一則一則看實在太花時間，所以我使用 Node.js 進行網路爬蟲，利用 AJAX 非同步的特性併發 request
+            取得所有要查詢的帳號的 user id，再用這些 user id 併發 request 取得所有查詢帳號在指定時間內發的文章的 ID，接著用這些文章 ID 併發 request
+            取得所有文章的回應，過濾出只有目標帳號的回應還有該文章網址，整理之後傳給前端畫面呈現，使用時只要按一顆按鈕就能節省很多時間，這樣就不用花時間每篇都看了。
+          </p>
+          <div class="techBox">
+            <span class="use">使用到的技術 : </span><span class="tech">Vue.js</span>
+            <span class="tech">AJAX</span>
+            <span class="tech">Node.js</span>
+            <span class="tech">Express</span>
+            <span class="tech">web crawler</span>
+            <span class="tech">Bootstrap</span>
+            <span class="tech">Heroku</span>
+            <span class="tech">Git</span>
+          </div>
+          <div class="link">
+            <span><a href="https://plurk-response-catcher.herokuapp.com/" target="_blank">網站連結</a></span>
+            <span><a href="https://github.com/YSL0701/Node.js_plurk_user_response_catcher" target="_blank">原始碼</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $('.carousel').carousel({ interval: 2500 })
+      $('.header>.profile').click(function() {
+        $('html, body').animate(
+          {
+            scrollTop: $('body>.profile').offset().top - 50
+          },
+          800
+        )
+      })
+      $('.header>.skills').click(function() {
+        $('html, body').animate(
+          {
+            scrollTop: $('body>.skills').offset().top - 50
+          },
+          800
+        )
+      })
+      $('.header>.portfolio').click(function() {
+        $('html, body').animate(
+          {
+            scrollTop: $('body>.portfolio').offset().top - 50
+          },
+          800
+        )
+      })
+      $('.header>.title').click(function() {
+        $('html, body').animate(
+          {
+            scrollTop: 0
+          },
+          800
+        )
+      })
+    </script>
+    <script src="./js/myChart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+body {
+  > .profile {
+    margin-top: 50px;
+    width: 100%;
+    min-height: 300px;
+    padding-left: 200px;
+    padding-right: 370px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #ffffff;
+    // background-color: #d6e1f9;
+    @include media($desktop-s) {
+      padding-left: 50px;
+      padding-right: 170px;
+    }
+    > p {
+      font-size: 18px;
+      margin-top: 20px;
+      line-height: 1.5;
+      text-indent: 2em;
+    }
+  }
+}

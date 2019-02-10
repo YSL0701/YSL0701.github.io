@@ -1,0 +1,84 @@
+body {
+  > .portfolio {
+    width: 100%;
+    min-height: 300px;
+    background-color: #ffffff;
+    padding-left: 200px;
+    padding-right: 170px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: left;
+    @include media($desktop-s) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    #carouselExampleIndicators,
+    #carouselExampleIndicators2,
+    #carouselExampleIndicators3 {
+      max-width: 530px;
+      width: 100%;
+      padding-top: 10px;
+    }
+    > .sweetaste-container,
+    > .plurk-timeline-container,
+    > .plurk-response-catcher {
+      margin-top: 30px;
+      padding-bottom: 30px;
+      border-bottom: #d6d6d6 solid 1px;
+      @include flex();
+    }
+    > .sweetaste-container {
+      .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaaaaa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+      }
+      .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaaaaa' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+      }
+    }
+    > .plurk-timeline-container {
+      .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23bcbcbc' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+      }
+      .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23bcbcbc' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+      }
+    }
+    .info {
+      margin-left: 20px;
+      width: 60%;
+    }
+    p {
+      font-size: 18px;
+      margin-top: 20px;
+      line-height: 1.5;
+      text-indent: 2em;
+    }
+    .techBox {
+      font-size: 0;
+      @include flex(row, flex-start, center);
+      flex-wrap: wrap;
+      .use {
+        font-size: 16px;
+      }
+      .tech {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        background-color: #e1e3f9;
+        font-size: 16px;
+        color: $primary;
+        border-radius: 5px;
+        border: darken(#e1e3f9, 10%) solid 1px;
+      }
+    }
+    .link {
+      margin-top: 20px;
+      span {
+        margin-right: 10px;
+      }
+    }
+  }
+}
