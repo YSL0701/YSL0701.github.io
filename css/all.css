@@ -129,6 +129,12 @@ body > .profile > p {
   text-indent: 2em;
 }
 
+body > .profile > .email {
+  text-align: right;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
 body > .skills {
   width: 100%;
   min-height: 300px;
