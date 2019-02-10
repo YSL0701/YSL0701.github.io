@@ -14,20 +14,26 @@ body {
     }
     #carouselExampleIndicators,
     #carouselExampleIndicators2,
-    #carouselExampleIndicators3 {
+    #carouselExampleIndicators3,
+    #carouselExampleIndicators4,
+    #carouselExampleIndicators5 {
       max-width: 530px;
       width: 100%;
       padding-top: 10px;
     }
     > .sweetaste-container,
     > .plurk-timeline-container,
-    > .plurk-response-catcher {
+    > .plurk-response-catcher,
+    > .air-aqi,
+    > .youbike {
       margin-top: 30px;
       padding-bottom: 30px;
       border-bottom: #d6d6d6 solid 1px;
       @include flex();
     }
-    > .sweetaste-container {
+    > .sweetaste-container,
+    > .air-aqi,
+    > .youbike {
       .carousel-control-prev-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaaaaa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
       }

@@ -172,7 +172,9 @@ body > .portfolio {
 
 body > .portfolio #carouselExampleIndicators,
 body > .portfolio #carouselExampleIndicators2,
-body > .portfolio #carouselExampleIndicators3 {
+body > .portfolio #carouselExampleIndicators3,
+body > .portfolio #carouselExampleIndicators4,
+body > .portfolio #carouselExampleIndicators5 {
   max-width: 530px;
   width: 100%;
   padding-top: 10px;
@@ -180,7 +182,9 @@ body > .portfolio #carouselExampleIndicators3 {
 
 body > .portfolio > .sweetaste-container,
 body > .portfolio > .plurk-timeline-container,
-body > .portfolio > .plurk-response-catcher {
+body > .portfolio > .plurk-response-catcher,
+body > .portfolio > .air-aqi,
+body > .portfolio > .youbike {
   margin-top: 30px;
   padding-bottom: 30px;
   border-bottom: #d6d6d6 solid 1px;
@@ -199,11 +203,15 @@ body > .portfolio > .plurk-response-catcher {
           align-items: flex-start;
 }
 
-body > .portfolio > .sweetaste-container .carousel-control-prev-icon {
+body > .portfolio > .sweetaste-container .carousel-control-prev-icon,
+body > .portfolio > .air-aqi .carousel-control-prev-icon,
+body > .portfolio > .youbike .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaaaaa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
-body > .portfolio > .sweetaste-container .carousel-control-next-icon {
+body > .portfolio > .sweetaste-container .carousel-control-next-icon,
+body > .portfolio > .air-aqi .carousel-control-next-icon,
+body > .portfolio > .youbike .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaaaaa' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
